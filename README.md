@@ -1,8 +1,8 @@
+![Stable Diffusion UI Cover](https://github.com/user-attachments/assets/e542074d-c7d5-4733-9414-67e1f3087eaa)
+
 # Stable Diffusion UI
 
 A cross-platform desktop application for generating images using Stable Diffusion models. Built with React, Python Flask, and Electron.
-
-![Stable Diffusion UI](public/assets/logo.png)
 
 ## Table of Contents
 
