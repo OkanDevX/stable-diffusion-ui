@@ -1,0 +1,5 @@
+{
+  "watch": ["src/electron"],
+  "ext": "ts,js",
+  "exec": "pnpm run transpile:electron && cross-env NODE_ENV=development electron ."
+}

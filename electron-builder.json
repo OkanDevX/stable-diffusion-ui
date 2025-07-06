@@ -1,0 +1,55 @@
+{
+  "appId": "com.stable-diffusion-ui.app",
+  "productName": "Stable Diffusion UI",
+  "directories": {
+    "output": "dist"
+  },
+  "files": [
+    "dist-electron/**/*",
+    "dist-react/**/*",
+    "!dist-electron/**/*.map",
+    "!dist-react/**/*.map"
+  ],
+  "extraResources": [
+    {
+      "from": "src/backend",
+      "to": "backend",
+      "filter": ["**/*", "!**/__pycache__/**", "!**/*.pyc", "!**/venv/**"]
+    },
+    {
+      "from": "config",
+      "to": "config"
+    },
+    {
+      "from": "assets",
+      "to": "assets"
+    }
+  ],
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "assets/icon.ico"
+  },
+  "mac": {
+    "target": [
+      {
+        "target": "dmg",
+        "arch": ["x64", "arm64"]
+      }
+    ],
+    "icon": "assets/icon.icns"
+  },
+  "linux": {
+    "target": [
+      {
+        "target": "AppImage",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "assets/icon.png"
+  }
+}

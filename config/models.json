@@ -1,0 +1,117 @@
+{
+  "supported_resolutions": [
+    {
+      "width": 512,
+      "height": 512,
+      "label": "Square",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "width": 1024,
+      "height": 1024,
+      "label": "Square",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "width": 768,
+      "height": 512,
+      "label": "Landscape",
+      "aspect_ratio": "3:2"
+    },
+    {
+      "width": 512,
+      "height": 768,
+      "label": "Portrait",
+      "aspect_ratio": "2:3"
+    },
+    {
+      "width": 1024,
+      "height": 576,
+      "label": "Wide",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "width": 576,
+      "height": 1024,
+      "label": "Tall",
+      "aspect_ratio": "9:16"
+    }
+  ],
+  "models": {
+    "dreamshaper_8": {
+      "id": "dreamshaper_8",
+      "name": "DreamShaper 8",
+      "description": "2024's most advanced model with perfect realism, text generation, and anatomy",
+      "group": "standard",
+      "huggingface_id": "Lykon/dreamshaper-8",
+      "pipeline_class": "StableDiffusionPipeline",
+      "recommended_params": {
+        "guidance_scale": 7.5,
+        "num_inference_steps": 20,
+        "width": 512,
+        "height": 512
+      },
+      "suggested_negative_prompt": "low quality, blurry, distorted, cartoon, watermark"
+    },
+    "realvis_xl": {
+      "id": "realvis_xl",
+      "name": "RealVis XL",
+      "description": "Best model for human figures with ultra-realistic faces and anatomy",
+      "group": "sdxl",
+      "huggingface_id": "SG161222/RealVisXL_V4.0",
+      "pipeline_class": "StableDiffusionXLPipeline",
+      "recommended_params": {
+        "guidance_scale": 7.0,
+        "num_inference_steps": 30,
+        "width": 1024,
+        "height": 1024
+      },
+      "suggested_negative_prompt": "cartoon, anime, painting, illustration, low quality"
+    },
+    "dreamshaper_xl": {
+      "id": "dreamshaper_xl",
+      "name": "DreamShaper XL",
+      "description": "Perfect for fantasy and sci-fi scenes with creative compositions",
+      "group": "sdxl",
+      "huggingface_id": "Lykon/dreamshaper-xl-1-0",
+      "pipeline_class": "StableDiffusionXLPipeline",
+      "recommended_params": {
+        "guidance_scale": 8.0,
+        "num_inference_steps": 25,
+        "width": 1024,
+        "height": 1024
+      },
+      "suggested_negative_prompt": "low quality, blurry, realistic photo"
+    },
+    "sdxl_turbo": {
+      "id": "sdxl_turbo",
+      "name": "SDXL Turbo",
+      "description": "Ultra-fast generation with 1-4 steps for quick results",
+      "group": "sdxl",
+      "huggingface_id": "stabilityai/sdxl-turbo",
+      "pipeline_class": "StableDiffusionXLPipeline",
+      "recommended_params": {
+        "guidance_scale": 0.0,
+        "num_inference_steps": 1,
+        "width": 512,
+        "height": 512
+      },
+      "suggested_negative_prompt": "low quality, blurry"
+    },
+    "sdxl_base": {
+      "id": "sdxl_base",
+      "name": "SDXL Base",
+      "description": "Standard SDXL base model",
+      "group": "sdxl",
+      "huggingface_id": "stabilityai/stable-diffusion-xl-base-1.0",
+      "pipeline_class": "StableDiffusionXLPipeline",
+      "recommended_params": {
+        "guidance_scale": 7.5,
+        "num_inference_steps": 30,
+        "width": 1024,
+        "height": 1024
+      },
+      "suggested_negative_prompt": "low quality, blurry, distorted"
+    }
+  }
+}
