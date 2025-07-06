@@ -1,4 +1,4 @@
-![Stable Diffusion UI Cover](https://github.com/user-attachments/assets/e542074d-c7d5-4733-9414-67e1f3087eaa)
+![Stable Diffusion UI Cover2-min](https://github.com/user-attachments/assets/bcb5e226-14a1-4bb6-96fe-751aba542f7d)
 
 # Stable Diffusion UI
 
@@ -30,6 +30,8 @@ This application provides a desktop interface for Stable Diffusion image generat
 The application manages Stable Diffusion models through Hugging Face's `diffusers` library and provides a graphical interface for parameter configuration and image generation.
 
 ## Features
+
+![2aeca94d87314c](https://github.com/user-attachments/assets/98923c18-f776-4980-a3fc-e68b8841b5c8)
 
 ### Core Functionality
 
